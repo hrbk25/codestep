@@ -7,17 +7,36 @@
 }
 
 /* header */
-.head-wrapper{
+.header-back{
+    width: 100%;
     height: 640px;
-    background-image: image-set();
+    background-image: url(../Codestep/img/COFFEE.jpg);
+    background-size: cover;
 }
 
 .main-nav{
-    display: flex;
     float: right;
+    display: flex;
+}
+
+.list-nav{
+    list-style-type: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.list-nav a{
+    text-decoration: none;
+    color: #fff;
 }
 
 
 .title{
-    font-size: 100px;
+    width: 100%;
+    display: block;
+    font-size: 60px;
+    color: #fff;
+    height: 640px;
+    margin-top: 320px;
+    text-align: center;    
 }
