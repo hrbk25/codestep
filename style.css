@@ -30,13 +30,77 @@
     color: #fff;
 }
 
+.list-nav a:hover{
+    color: #c85554;
+}
+
 
 .title{
     width: 100%;
-    display: block;
-    font-size: 60px;
+    font-size: 100px;
+    padding-top: 240px;
+    font-weight: bold;
     color: #fff;
-    height: 640px;
-    margin-top: 320px;
     text-align: center;    
+}
+
+.section-title{
+    height: 300px;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+}
+
+.sub-title{
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 6px red solid;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+/* menu */
+
+#menu{
+    background-image: url(../Codestep/img/MENU.jpg);
+    background-size: cover;
+}
+
+.menu-section{
+    display: flex;
+}
+
+.menu-left{
+    width: 50%;
+    text-align: center;
+    border-right: 1px #000 solid;
+}
+
+.menu-right{
+    width: 50%;
+    text-align: center;
+}
+
+.one-menu{
+    display: flex;
+    margin: 0 auto;
+}
+
+.menu-name{
+    border-bottom: 1px #000 dotted;
+}
+
+.menu-price{
+    padding-top: 5pxs;
+}
+
+
+#about{
+    background-image: url(../Codestep/img/ABOUT.jpg);
+    background-size: cover;
+}
+
+#location{
+    background-image: url(../Codestep/img/LOCATION.jpg);
+    background-size: cover;
 }
