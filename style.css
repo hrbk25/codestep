@@ -48,15 +48,27 @@
     height: 300px;
     color: #fff;
     font-size: 60px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sub-title{
+    text-align: center;
+}
+
+.sub-title div{
     font-size: 40px;
     font-weight: bold;
     border-bottom: 6px red solid;
     display: inline-block;
-    margin-bottom: 50px;
+    margin: 75px 0;
+}
+
+/* contents */
+
+section{
+    margin-bottom: 180px;
 }
 
 /* menu */
@@ -64,6 +76,7 @@
 #menu{
     background-image: url(../Codestep/img/MENU.jpg);
     background-size: cover;
+    
 }
 
 .menu-section{
@@ -83,24 +96,87 @@
 
 .one-menu{
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .menu-name{
     border-bottom: 1px #000 dotted;
+    width: 70%;
+    text-align: left;
 }
 
 .menu-price{
     padding-top: 5pxs;
+    width: 15%;
 }
 
+/* about */
 
 #about{
     background-image: url(../Codestep/img/ABOUT.jpg);
     background-size: cover;
 }
 
+.text-box{
+    display: flex;
+    width: 100%;
+}
+
+.text-box-left{
+    width: 50%;
+    margin: 20px;
+}
+
+.text-box-right{
+    width: 50%;
+    margin: 20px;
+}
+
+.readMore{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.readMore a{
+    color: #000;
+    text-decoration: none;
+    padding: 15px 40px;
+    position: relative;
+}
+
+.readMore a::before, .readMore a::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 20px;
+}
+
+.readMore a::before{
+    border-left: 3px red solid;
+    border-top: 3px red solid;
+    top: 0;
+    left: 0;
+}
+
+.readMore a::after{
+    border-right: 3px red solid;
+    border-bottom: 3px red solid;
+    bottom: 0;
+    right: 0;
+}
+
 #location{
     background-image: url(../Codestep/img/LOCATION.jpg);
     background-size: cover;
+}
+
+.map{
+    width: 100%;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
 }
