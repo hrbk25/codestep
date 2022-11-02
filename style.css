@@ -60,7 +60,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(10px 10px 20px #d63131);
+    filter: drop-shadow(1px 1px 10px #c0c0c0);
 }
 
 .sub-title{
@@ -75,6 +75,11 @@ body {
     margin: 75px 0;
 }
 
+.fixed-bg{
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /* contents */
 
 section{
@@ -85,7 +90,6 @@ section{
 
 #menu{
     background-image: url(../Codestep/img/MENU.jpg);
-    background-size: cover;
 }
 
 .menu-section{
@@ -124,7 +128,6 @@ section{
 
 #about{
     background-image: url(../Codestep/img/ABOUT.jpg);
-    background-size: cover;
 }
 
 .text-box{
@@ -177,7 +180,6 @@ section{
 
 #location{
     background-image: url(../Codestep/img/LOCATION.jpg);
-    background-size: cover;
 }
 
 .map{
@@ -221,6 +223,10 @@ footer{
         border-bottom: 6px red solid;
         display: inline-block;
         margin: 10px 0 20px 0;
+    }
+
+    .fixed-bg{
+        background-attachment: unset;
     }
 
     .text-box{
