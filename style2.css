@@ -5,6 +5,7 @@
 body {
     font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     line-height: 1.7;
+    letter-spacing: 1.5px;
 }
 
 .wrapper{
@@ -15,6 +16,75 @@ body {
     background-color: aliceblue;
 }
 
-.h2{
-    
+h2{
+    font-size: 36px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+.header-page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 100px;
+    margin: 50px 0px 0px 20px;
+}
+
+
+/* contents */
+
+.text-box .text{
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.main-visual{
+    background-image:url(img/mainvisual1.jpg) ;
+    background-position: right;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text-box{
+    position: absolute;
+    top: 30%;
+}
+
+.text-box a{
+    background-color: red;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 5px #CC0033;
+    border-radius: 10px;
+    display: block;
+    padding: 15px 0px 15px 0px;
+    margin-top: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.text-box a::after{
+    content: "＞";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.text-box a:hover{
+    transform: scale(1.05);
 }
