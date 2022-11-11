@@ -18,6 +18,7 @@ body {
 
 h2{
     font-size: 36px;
+    font-weight: normal;
 }
 
 ul{
@@ -38,6 +39,29 @@ a{
 .logo img{
     width: 100px;
     margin: 50px 0px 0px 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.title h2::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    width: 100px;
+    height: 3px;
+    left: 50%;
+    bottom: -15px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 
@@ -87,4 +111,50 @@ a{
 
 .text-box a:hover{
     transform: scale(1.05);
+}
+
+/* section 1 */
+
+.reason-box{
+    background-color: red;
+    padding: 50px 0;
+    position: relative;
+}
+
+.reason{
+    background-color: #fff;
+    display: flex;
+    padding: 30px 60px;
+    width: 40%;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.left{
+    justify-content: flex-end;
+    margin: 30px auto 30px -20px;
+}
+
+.right{
+    justify-content: flex-start;
+    margin: 30px -20px 30px auto;
+}
+
+.reason img{
+    object-fit: contain;
+    height: 60px;
+}
+
+.reason-text{
+    margin-left: 30px;
+}
+
+.sub-title{
+    color: red;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.reason-text p{
+    font-size: 18px;
 }
