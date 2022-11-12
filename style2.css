@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
     width: 100%;
     font-size: 16px;
-    background-color: aliceblue;
+    background-color: #87CEFA;
 }
 
 h2{
@@ -157,4 +157,31 @@ a{
 
 .reason-text p{
     font-size: 18px;
+}
+
+/* parson */
+.parson-box{
+    display: flex;
+    align-items: center;
+}
+
+.parson img{
+    background-color: silver;
+    border-radius: 100%;
+    width: 50%;
+}
+
+.parson p{
+    font-size: 12px;
+}
+
+.parson-text{
+    background-color: aliceblue;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.middle{
+    margin-right: auto;
 }
