@@ -32,11 +32,12 @@ a{
 .header-page{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo img{
     width: 100px;
-    margin: 50px 0px 0px 20px;
+    margin: 30px 0px 0px 40px;
 }
 
 .title{
@@ -60,6 +61,63 @@ a{
     bottom: -15px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.hamburger{
+    background-color: #ff2a2a;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hamburger:hover{
+    opacity: 0.7;
+}
+
+.hamburger span{
+    background-color: white;
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    left: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1){
+    top: 36px;
+}
+
+.hamburger span:nth-child(2){
+    top: 50px;
+}
+
+.hamburger span:nth-child(3){
+    top: 64px;
+}
+
+.hamburger:active span:nth-child(1){
+    top: 47px;
+    left: 25px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+
+.hamburger:active span:nth-child(2){
+    top: 47px;
+    left: 25px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.hamburger:active span:nth-child(3){
+    top: 47px;
+    left: 25px;
+    background-color: #fff;
+    transform: rotate(45deg);
 }
 
 
