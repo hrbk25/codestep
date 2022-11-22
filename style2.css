@@ -179,25 +179,81 @@ a{
 }
 
 /* contents */
-
-.text-box .text{
-    font-size: 46px;
-    font-weight: bold;
-}
-
 .main-visual{
-    background-image:url(img/mainvisual1.jpg) ;
-    background-position: right;
-    background-size: contain;
-    height: 500px;
+    height: 720px;
     width: 100%;
-    background-repeat: no-repeat;
+    margin-bottom: 120px;
     position: relative;
 }
 
 .text-box{
     position: absolute;
-    top: 30%;
+    top: 280px;
+    left: 10%;
+    z-index: 10;
+}
+
+.text-box .text{
+    font-size: 46px;
+    font-weight: bold;
+    text-shadow: 0px 4px 6px #fff;
+}
+
+.fade li{
+    width: 75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.fade img{
+    width: 100%;
+    height: 720px;
+    object-fit: contain;
+    top: 0px;
+    opacity: 0;
+    animation: fade 15s infinite;
+}
+
+.fade li:nth-child(1){
+    animation-delay: 0s;
+}
+
+.fade li:nth-child(2){
+    animation-delay: 5s;
+}
+
+.fade li:nth-child(3){
+    animation-delay: 10s;
+}
+
+.fade li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 0px 0px 20px 20px #CC0033;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .text-box a{
@@ -207,8 +263,8 @@ a{
     text-align: center;
     box-shadow: 0 5px #CC0033;
     border-radius: 10px;
-    display: block;
-    padding: 15px 0px 15px 0px;
+    display: inline-block;
+    padding: 15px 100px;
     margin-top: 10px;
     transition: 0.3s;
     position: relative;
