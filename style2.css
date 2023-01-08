@@ -98,28 +98,28 @@ a{
     top: 64px;
 }
 
-.hamburger:active span:nth-child(1){
+.hamburger.active span:nth-child(1){
     top: 47px;
     left: 25px;
     background-color: #fff;
     transform: rotate(-45deg);
 }
 
-.hamburger:active span:nth-child(2){
+.hamburger.active span:nth-child(2){
     top: 47px;
     left: 25px;
     background-color: #fff;
     transform: rotate(45deg);
 }
 
-.hamburger:active span:nth-child(3){
+.hamburger.active span:nth-child(3){
     top: 47px;
     left: 25px;
     background-color: #fff;
     transform: rotate(45deg);
 }
 
-.header-page nav{
+.header-page #navi{
     background-color: red;
     width: 100%;
     height: 500px;
@@ -131,7 +131,7 @@ a{
     visibility: hidden;
 }
 
-.header-page nav:active{
+.header-page #navi.active{
     opacity: 1;
     visibility: visible;
 }
@@ -328,6 +328,10 @@ a{
 
 .reason-text p{
     font-size: 18px;
+}
+
+.slide-left{
+    animation: slide-left 0.5s ease-out 0s 1 forwards;
 }
 
 /* parson */

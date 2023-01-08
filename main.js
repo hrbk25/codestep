@@ -1,4 +1,11 @@
 $(function(){
+    $('.hamburger').on('click', function() {
+        hamburger();
+      });
+      $('#navi a').on('click', function() {
+        hamburger();
+      });
+
     $('a[href^="#"]').click(function(){
         let href = $(this).attr("href");
         let target = $(href == "#" || href == "" ? 'html' : href);
@@ -8,3 +15,13 @@ $(function(){
     });
 });
 
+
+function hamburger() {
+    $('.hamburger').toggleClass('active');
+  
+    if ($('.hamburger').hasClass('active')) {
+             $('#navi').addClass('active');
+    } else {
+      $('#navi').removeClass('active');
+    }
+  }
